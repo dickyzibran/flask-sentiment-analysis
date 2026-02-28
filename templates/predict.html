@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="glass mb-4 text-center">
+  <h2 class="fw-bold">Prediksi Sentimen Ulasan</h2>
+  <p class="desc-text">
+    Masukkan teks ulasan wisata untuk memprediksi sentimennya.
+  </p>
+</div>
+
+<div class="glass">
+  <form method="POST" action="/predict">
+    <textarea name="text" class="form-control mb-3" rows="4"
+      placeholder="Tulis ulasan wisata di sini, misalnya: pantai, sampah, kuda, boat......" required>{{ text_input }}</textarea>
+
+    <button class="btn btn-primary w-100">Prediksi Sekarang</button>
+  </form>
+
+  {% if prediction %}
+  <div class="mt-4 text-center">
+    <h4 class="fw-bold">
+      Hasil Prediksi:
+      <span class="
+        {% if prediction == 'Positive' %}text-success
+        {% elif prediction == 'Neutral' %}text-warning
+        {% else %}text-danger{% endif %}">
+        {{ prediction }}
+      </span>
+    </h4>
+
+    {% if confidence %}
+    <p class="desc-text">
+      Tingkat keyakinan model: <b>{{ (confidence*100)|round(2) }}%</b>
+    </p>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Jakarta
+X-LIC-LOCATION:Asia/Jakarta
+BEGIN:STANDARD
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:GMT+7
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Jakarta:20260119T144500
+DTEND;TZID=Asia/Jakarta:20260121T154500
+DTSTAMP:20260119T080543Z
+ORGANIZER;CN=Monalisa Arcelia:mailto:mona@dicoding.com
+UID:4j1un47ukqaka3ks4m1e7g39kl@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=dickyzibran3421@gmail.com;X-NUM-GUESTS=0:mailto:dickyzibran3421@gma
+ il.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/htu-jfyv-zma
+X-MICROSOFT-CDO-OWNERAPPTID:51827794
+CREATED:20260119T080218Z
+DESCRIPTION:<b>Dear Teman-Teman Mahasiswa\,</b><br><br><b>Selamat</b> kamu 
+ sudah di tahap mendapatkan offering/penawaran dari beasiswa Coding Camp 202
+ 6! 🎉🎉<br><br>Offering ini adalah bentuk konfirmasi ulang\, apakah kamu in
+ gin lanjut atau membatalkan pendaftaranmu di program Coding Camp sebelum ka
+ mu terpilih sebagai cohort final.<br><br>‼️Segera konfirmasi melalui dashbo
+ ard pendaftaran kamu\, <b>klik bagian</b> <b>PENGUMUMAN</b>:<br><a href="ht
+ tps://www.dicoding.com/codingcamp/registration" target="_blank">https://www
+ .dicoding.com/codingcamp/registration</a><br><ul><li>Jika kamu ingin lanjut
+ \, klik Terima Tawaran\, lalu ikuti petunjuk selanjutnya.</li><li>Jika kamu
+  membatalkan pendaftaran\, klik Tolak/Menolak.</li></ul>Batas waktu untuk k
+ onfirmasi adalah 2 hari sejak kamu mendapatkan notifikasi ini\, baik di ema
+ il\, google calendar ini\, maupun pesan WA. <b>Pastikan kamu login akun Dic
+ oding menggunakan email pendaftaran Coding Camp!</b><br><br>Jika ada pertan
+ yaan lebih lanjut\, simpan dan hubungi nomor WA berikut:<br><a href="http:/
+ /wa.me/6285279039722" target="_blank">085279039722</a><br><br>Terima kasih.
+ <br>--<br>Tim Coding Camp 2026\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: http
+ s://meet.google.com/htu-jfyv-zma\nOr dial: (US) +1 347-954-0314 PIN: 695380
+ 339#\nMore phone numbers: https://tel.meet/htu-jfyv-zma?pin=4833254634416&h
+ s=7\n\nLearn more about Meet at: https://support.google.com/a/users/answer/
+ 9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260119T080543Z
+LOCATION:https://meet.google.com/htu-jfyv-zma
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Deadline Terima/Menolak Offering Beasiswa Coding Camp 2026
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

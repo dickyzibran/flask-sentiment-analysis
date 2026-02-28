@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- ================= HEADER ================= -->
+<div class="glass mb-5 text-center">
+  <h2 class="fw-bold mb-2">Dashboard Analisis Sentimen</h2>
+  <p class="desc-text">
+    Visualisasi interaktif ulasan wisata Gili Trawangan berbasis
+    Machine Learning menggunakan Support Vector Machine (SVM).
+  </p>
+</div>
+
+<!-- ================= DISTRIBUTION & CONFUSION MATRIX ================= -->
+<div class="row g-4 mb-5">
+  <div class="col-md-6">
+    <div class="glass">
+      <h5 class="fw-semibold mb-3">Distribusi Sentimen</h5>
+      <img src="{{ url_for('static', filename='images/sentiment_dist.png') }}"
+           class="img-fluid">
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="glass">
+      <h5 class="fw-semibold mb-3">Confusion Matrix</h5>
+      <img src="{{ url_for('static', filename='images/cm.png') }}"
+           class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<!-- ================= CLASSIFICATION REPORT ================= -->
+<div class="glass mb-5">
+  <h4 class="fw-semibold mb-3">Classification Report</h4>
+
+  <p class="desc-text">
+    Evaluasi performa model klasifikasi sentimen menggunakan metrik
+    <b>precision</b>, <b>recall</b>, <b>f1-score</b>, dan <b>accuracy</b>.
+    Visualisasi ini menunjukkan kemampuan model dalam mengklasifikasikan
+    sentimen ulasan wisata Gili Trawangan.
+  </p>
+
+  <img src="{{ url_for('static', filename='images/classification_report.png') }}"
+       class="img-fluid">
+</div>
+
+
+<!-- ================= WORDCLOUD ALL ================= -->
+<div class="glass mb-5">
+  <h4 class="fw-semibold mb-3">Word Cloud – Seluruh Ulasan</h4>
+  <p class="desc-text">
+    Visualisasi kata yang paling sering muncul pada seluruh ulasan wisata
+    Gili Trawangan. Ukuran kata menunjukkan frekuensi kemunculan.
+  </p>
+  <img src="{{ url_for('static', filename='images/wc_all.png') }}"
+       class="img-fluid">
+</div>
+
+<!-- ================= WORDCLOUD PER SENTIMEN ================= -->
+<div class="row g-4">
+
+  <!-- POSITIVE -->
+  <div class="col-md-4">
+    <div class="glass sent-positive h-100" style="animation-delay:0.1s">
+      <h5 class="text-success fw-semibold mb-3">
+        Sentimen Positif
+      </h5>
+      <p class="desc-text">
+        Persepsi positif wisatawan terhadap keindahan, suasana,
+        dan pengalaman wisata di Gili Trawangan.
+      </p>
+      <img src="{{ url_for('static', filename='images/wc_positive.png') }}"
+           class="img-fluid">
+    </div>
+  </div>
+
+  <!-- NEUTRAL -->
+  <div class="col-md-4">
+    <div class="glass sent-neutral h-100" style="animation-delay:0.25s">
+      <h5 class="text-warning fw-semibold mb-3">
+        Sentimen Netral
+      </h5>
+      <p class="desc-text">
+        Ulasan yang bersifat informatif atau deskriptif tanpa
+        kecenderungan emosi yang kuat.
+      </p>
+      <img src="{{ url_for('static', filename='images/wc_neutral.png') }}"
+           class="img-fluid">
+    </div>
+  </div>
+
+  <!-- NEGATIVE -->
+  <div class="col-md-4">
+    <div class="glass sent-negative h-100" style="animation-delay:0.4s">
+      <h5 class="text-danger fw-semibold mb-3">
+        Sentimen Negatif
+      </h5>
+      <p class="desc-text">
+        Ulasan yang mengandung kritik, keluhan, atau pengalaman
+        kurang menyenangkan selama berwisata.
+      </p>
+      <img src="{{ url_for('static', filename='images/wc_negative.png') }}"
+           class="img-fluid">
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= TOGGLE SCRIPT ================= -->
+<script>
+function toggleReport() {
+  const img = document.getElementById("reportImage");
+  img.style.display = img.style.display === "none" ? "block" : "none";
+}
+</script>
+
+{% endblock %}

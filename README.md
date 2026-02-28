@@ -30,3 +30,8 @@ This application allows users to input tourism review text and receive sentiment
 
 2. Run:
    python app.py
+
+## Preview
+
+![Confusion Matrix](static/images/cm.png)
+![Sentiment Distribution](static/images/sentiment_dist.png)

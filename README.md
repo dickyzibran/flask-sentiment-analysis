@@ -30,3 +30,6 @@ This application allows users to input tourism review text and receive sentiment
 
 2. Run:
    python app.py
+
+## preview
+![alt text](<Screenshot 2026-02-28 131212.png>)
